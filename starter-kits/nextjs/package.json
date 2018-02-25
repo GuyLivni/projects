@@ -4,10 +4,10 @@
   "description": "A next.js starter kit",
   "author": "Guy Livni <guylivni@gmail.com> (https://github.com/GuyLivni)",
   "license": "MIT",
-  "homepage": "https://github.com/GuyLivni/projects/starter-kits/nextjs",
+  "homepage": "https://github.com/GuyLivni/projects/tree/master/starter-kits/nextjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GuyLivni/projects/starter-kits/nextjs"
+    "url": "https://github.com/GuyLivni/projects/tree/master/starter-kits/nextjs"
   },
   "keywords": [
     "starter",

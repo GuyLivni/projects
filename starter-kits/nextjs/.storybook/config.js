@@ -18,7 +18,7 @@ function loadStories() {
 
 setOptions({
   name: "Next.js Starter Kit",
-  url: "https://github.com/GuyLivni/projects/starter-kits/nextjs",
+  url: "https://github.com/GuyLivni/projects/tree/master/starter-kits/nextjs",
   addonPanelInRight: true
 });
 

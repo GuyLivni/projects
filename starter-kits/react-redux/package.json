@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GuyLivni/projects/starter-kits/react-redux"
+    "url": "https://github.com/GuyLivni/projects/tree/master/starter-kits/react-redux"
   },
   "keywords": [
     "starter",
@@ -29,7 +29,7 @@
   ],
   "author": "Guy Livni <guylivni@gmail.com> (https://github.com/GuyLivni)",
   "license": "MIT",
-  "homepage": "https://github.com/GuyLivni/projects/starter-kits/react-redux",
+  "homepage": "https://github.com/GuyLivni/projects/tree/master/starter-kits/react-redux",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

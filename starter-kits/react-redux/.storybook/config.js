@@ -19,7 +19,7 @@ function loadStories() {
 
 setOptions({
   name: 'React Redux Starter',
-  url: 'https://github.com/GuyLivni/projects/starter-kits/react-redux',
+  url: 'https://github.com/GuyLivni/projects/tree/master/starter-kits/react-redux',
   addonPanelInRight: true
 });
 
