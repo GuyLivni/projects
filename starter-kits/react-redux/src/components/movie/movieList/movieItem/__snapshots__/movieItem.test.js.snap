@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie Item MovieItem ui renders correctly 1`] = `
+.c0 {
+  overflow-y: auto;
+  height: 100px;
+}
+
+<div
+  className="ui blue card"
+  href={undefined}
+  onClick={[Function]}
+>
+  <div
+    className="content"
+  >
+    <img
+      className="ui tiny right floated image"
+      src="http://static.tvmaze.com/uploads/images/medium_portrait/4/10842.jpg"
+    />
+    <div
+      className="header"
+    >
+      batman
+    </div>
+    <div
+      className="meta"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="description c0"
+    >
+      batman test
+    </div>
+  </div>
+  <div
+    className="extra content"
+  >
+    <a>
+      <i
+        aria-hidden="true"
+        className="yellow star icon"
+      />
+      22
+    </a>
+  </div>
+</div>
+`;

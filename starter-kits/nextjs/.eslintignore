@@ -1,0 +1,7 @@
+## Ignore these files ##
+/node_modules/*
+/temp/*
+/test/*
+/.next/
+/dist/
+/build/

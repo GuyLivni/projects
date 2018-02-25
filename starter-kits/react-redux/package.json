@@ -1,0 +1,89 @@
+{
+  "name": "react-redux",
+  "version": "0.1.0",
+  "description": "A react redux boilerplate based on create-react-app.",
+  "engines": {
+    "node": ">=8.0",
+    "npm": ">=3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuyLivni/projects/starter-kits/react-redux"
+  },
+  "keywords": [
+    "starter",
+    "boilerpate",
+    "react",
+    "redux",
+    "react router v4",
+    "es6",
+    "flow",
+    "jest",
+    "unit testing",
+    "styled-components",
+    "re-ducks",
+    "storybook",
+    "semantic-ui",
+    "axios",
+    "redux-pack"
+  ],
+  "author": "Guy Livni <guylivni@gmail.com> (https://github.com/GuyLivni)",
+  "license": "MIT",
+  "homepage": "https://github.com/GuyLivni/projects/starter-kits/react-redux",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./ --fix --cache",
+    "flow": "flow",
+    "precommit": "flow check && lint-staged",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --cache",
+      "git add",
+      "cross-env CI=true react-scripts test --env=jsdom --findRelatedTests"
+    ]
+  },
+  "pre-commit": "precommit",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "deline": "^1.0.4",
+    "invariant": "^2.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-redux-loading-bar": "^3.1.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.78.2",
+    "styled-components": "^3.1.6",
+    "styled-normalize": "^4.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.13",
+    "@storybook/addon-info": "^3.3.13",
+    "@storybook/addon-knobs": "^3.3.13",
+    "@storybook/addon-links": "^3.3.13",
+    "@storybook/addon-options": "^3.3.13",
+    "@storybook/addons": "^3.3.13",
+    "@storybook/react": "^3.3.13",
+    "babel-core": "^6.26.0",
+    "cross-env": "^5.1.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "flow-bin": "^0.66.0",
+    "jest-styled-components": "^4.11.0-1",
+    "lint-staged": "^7.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.10.2",
+    "react-test-renderer": "^16.2.0",
+    "redux-logger": "^3.0.6"
+  }
+}

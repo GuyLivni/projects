@@ -1,0 +1,25 @@
+{
+  "plugins": [["styled-components", { "ssr": true, "displayName": true }]],
+  "env": {
+    "staging": {
+      "presets": [
+        "next/babel"
+      ]
+    },
+    "production": {
+      "presets": [
+        "next/babel"
+      ]
+    },
+    "development": {
+      "presets": [
+        "next/babel",
+        "react",
+        "stage-2"
+      ]
+    },
+    "test": {
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]]
+    }
+  }
+}
