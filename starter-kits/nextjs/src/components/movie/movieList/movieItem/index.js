@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { Link } from '../../../routes/index';
+import { Link } from '../../../../routes/';
 
 const StyledItem = styled.li`
   display: flex;

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { text, number } from '@storybook/addon-knobs';
 
-import MovieItem from './movieItem';
+import MovieItem from './';
 
 storiesOf('MovieItem', module).add(
   'With props',

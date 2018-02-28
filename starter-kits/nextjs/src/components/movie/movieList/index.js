@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import MovieItem from './movieItem';
+import MovieItem from './movieItem/';
 
 const MovieListContainer = styled.ul`
   padding: 0;
