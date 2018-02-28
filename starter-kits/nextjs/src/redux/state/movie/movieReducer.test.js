@@ -5,7 +5,7 @@ import { LIFECYCLE } from '../../../redux/middlewares/api';
 import reducer from './movieReducer';
 import { movieTypes } from './';
 
-describe('user reducer', () => {
+describe('movie reducer', () => {
   const initState = fromJS({
     movies: [],
     movie: {},
