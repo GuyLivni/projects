@@ -1,9 +1,9 @@
-import asyncComponent from "../utils/asyncComponent";
-
-const AsyncHome = asyncComponent(() => import("../views/home"));
-const AsyncMovies = asyncComponent(() => import("../views/movies"));
-const AsyncMoviesDashboard = asyncComponent(() => import("../components/movie/moviesDashboard"));
-const AsyncNoMatch = asyncComponent(() => import("../views/noMatch"));
+import {
+  AsyncHome,
+  AsyncMovies,
+  AsyncMoviesDashboard,
+  AsyncNoMatch
+} from "./asyncRoutes";
 
 const routes = [
   {
