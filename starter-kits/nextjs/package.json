@@ -51,7 +51,6 @@
     "compression": "^1.7.2",
     "deline": "^1.0.4",
     "express": "^4.16.2",
-    "helmet": "^3.11.0",
     "immutable": "^3.8.2",
     "invariant": "^2.2.2",
     "next": "^5.0.0",

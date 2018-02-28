@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 const express = require('express');
 const next = require('next');
-const helmet = require('helmet');
 const compression = require('compression');
 
 const routes = require('./src/routes');
@@ -25,7 +24,6 @@ app
       server.use(compression());
     }
 
-    server.use(helmet());
     // health check
     server.get('/ping', (req, res) => res.status(200).send({ status: 'OK' }));
     server.use(handler);
