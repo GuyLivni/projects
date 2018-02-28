@@ -1,28 +1,30 @@
-import Home from "../views/home";
-import Movies from "../views/movies";
-import MoviesDashboard from "../components/movie/moviesDashboard";
-import NoMatch from "../views/noMatch";
+import asyncComponent from "../utils/asyncComponent";
+
+const AsyncHome = asyncComponent(() => import("../views/home"));
+const AsyncMovies = asyncComponent(() => import("../views/movies"));
+const AsyncMoviesDashboard = asyncComponent(() => import("../components/movie/moviesDashboard"));
+const AsyncNoMatch = asyncComponent(() => import("../views/noMatch"));
 
 const routes = [
   {
     path: "/",
-    component: Home,
+    component: AsyncHome,
     exact: true
   },
   {
     path: "/movies",
-    component: Movies,
+    component: AsyncMovies,
     routes: [
       {
         path: "/movies",
-        component: MoviesDashboard,
+        component: AsyncMoviesDashboard,
         exact: true
       }
     ]
   },
   {
     path: "",
-    component: NoMatch
+    component: AsyncNoMatch
   }
 ];
 
