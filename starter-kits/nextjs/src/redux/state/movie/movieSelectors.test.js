@@ -7,20 +7,20 @@ describe('Movie Selectors', () => {
     it('should return movies list as immutable Map', () => {
       const movies = fromJS([
         {
-          language: 'English',
-          rating: 6,
-          image:
-            'https://www.chapter.org/sites/default/files/production/banner/LEGO%20Batman-%20Banner.jpg',
-          id: 1,
-          name: 'batman',
+          score: 22.34,
+          show: {
+            id: 1,
+            language: 'English',
+            name: 'Batman',
+          },
         },
         {
-          language: 'German',
-          rating: 4,
-          image:
-            'https://www.chapter.org/sites/default/files/production/banner/LEGO%20Batman-%20Banner.jpg',
-          id: 2,
-          name: 'lego batman',
+          score: 12.34,
+          show: {
+            id: 2,
+            language: 'German',
+            name: 'Batman unlimited',
+          },
         },
       ]);
 
@@ -37,12 +37,12 @@ describe('Movie Selectors', () => {
   describe('select single movie', () => {
     it('should return a single immutable movie object', () => {
       const movie = fromJS({
-        language: 'German',
-        rating: 4,
-        image:
-          'https://www.chapter.org/sites/default/files/production/banner/LEGO%20Batman-%20Banner.jpg',
-        id: 2,
-        name: 'lego batman',
+        score: 12.34,
+        show: {
+          id: 2,
+          language: 'German',
+          name: 'Batman unlimited',
+        },
       });
 
       const reduxState = fromJS({

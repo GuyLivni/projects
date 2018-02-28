@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie List MovieList ui renders correctly 1`] = `
+.c0 {
+  padding: 0;
+  list-style: none;
+}
+
+<ul
+  className="c0"
+/>
+`;

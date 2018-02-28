@@ -4,14 +4,14 @@ import { LIFECYCLE } from "../../../redux/middlewares/api";
 import reducer from "./movieReducer";
 import { movieTypes } from "./";
 
-describe("user reducer", () => {
+describe("movie reducer", () => {
   const initState = [];
 
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual(initState);
   });
 
-  it("should handle GET_MOVIES and return correct result", () => {
+  it("should handle GET_MOVIES and return movie list", () => {
     const movies = [
       {
         score: 22.34,
