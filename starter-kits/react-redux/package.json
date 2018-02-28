@@ -25,7 +25,8 @@
     "storybook",
     "semantic-ui",
     "axios",
-    "redux-pack"
+    "redux-pack",
+    "code-splitting"
   ],
   "author": "Guy Livni <guylivni@gmail.com> (https://github.com/GuyLivni)",
   "license": "MIT",
