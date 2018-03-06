@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
-import { makeApiAction } from "../../../utils/testUtils";
+import { createApiAction } from "../../../utils/testUtils";
 import { LIFECYCLE } from "../../../redux/middlewares/api";
 import reducer from "./movieReducer";
 import { movieTypes } from "./";
+import { movies } from "./movieMockData";
 
 describe("movie reducer", () => {
   const initState = [];
@@ -12,26 +13,7 @@ describe("movie reducer", () => {
   });
 
   it("should handle GET_MOVIES and return movie list", () => {
-    const movies = [
-      {
-        score: 22.34,
-        show: {
-          id: 1,
-          language: "English",
-          name: "Batman"
-        }
-      },
-      {
-        score: 12.34,
-        show: {
-          id: 2,
-          language: "German",
-          name: "Batman unlimited"
-        }
-      }
-    ];
-
-    const action = makeApiAction(LIFECYCLE.SUCCESS, {
+    const action = createApiAction(LIFECYCLE.SUCCESS, {
       type: movieTypes.GET_MOVIES,
       payload: movies
     });

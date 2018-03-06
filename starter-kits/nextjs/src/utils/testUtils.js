@@ -2,7 +2,7 @@
 
 import { KEY } from '../redux/middlewares/api';
 
-export const makeApiAction = (lifecycle, { type, payload, meta = {} }) => ({
+export const createApiAction = (lifecycle, { type, payload, meta = {} }) => ({
   type,
   payload,
   meta: {

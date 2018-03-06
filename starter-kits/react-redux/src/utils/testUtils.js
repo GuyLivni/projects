@@ -9,7 +9,7 @@ type actionCreator = {
   meta: Object
 };
 
-export const makeApiAction = (
+export const createApiAction = (
   lifecycle: string,
   { type, payload, meta = {} }: actionCreator
 ) => ({

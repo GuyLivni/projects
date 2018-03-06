@@ -1,49 +1,26 @@
 /* eslint-disable no-undef */
 import { fromJS } from 'immutable';
 import { movieSelectors } from './';
+import { movies } from './movieMockData';
 
 describe('Movie Selectors', () => {
   describe('select movie list', () => {
     it('should return movies list as immutable Map', () => {
-      const movies = fromJS([
-        {
-          score: 22.34,
-          show: {
-            id: 1,
-            language: 'English',
-            name: 'Batman',
-          },
-        },
-        {
-          score: 12.34,
-          show: {
-            id: 2,
-            language: 'German',
-            name: 'Batman unlimited',
-          },
-        },
-      ]);
+      const immMovies = fromJS(movies);
 
       const reduxState = fromJS({
-        movies,
+        movies: fromJS(immMovies),
         movie: {},
       });
 
       const selected = movieSelectors.selectMovies(reduxState);
-      expect(selected).toEqual(movies);
+      expect(selected).toEqual(immMovies);
     });
   });
 
   describe('select single movie', () => {
     it('should return a single immutable movie object', () => {
-      const movie = fromJS({
-        score: 12.34,
-        show: {
-          id: 2,
-          language: 'German',
-          name: 'Batman unlimited',
-        },
-      });
+      const movie = fromJS(movies[0]);
 
       const reduxState = fromJS({
         movies: [],
