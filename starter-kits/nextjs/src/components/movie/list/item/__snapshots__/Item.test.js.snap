@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie item component MovieItem ui renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ddd;
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 10px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<li
+  className="c0"
+>
+  <img
+    alt="img"
+    className="c1"
+    src="https://www.chapter.org/sites/default/files/production/banner/LEGO%20Batman-%20Banner.jpg"
+  />
+  <div
+    className="c2"
+  >
+    <a
+      href="/movie/1"
+      onClick={[Function]}
+    >
+      Lego Batman
+    </a>
+    <div>
+      language: 
+      German
+    </div>
+    <div>
+      rating: 
+      10
+    </div>
+  </div>
+</li>
+`;
