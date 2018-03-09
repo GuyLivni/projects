@@ -1,8 +1,4 @@
-import {
-  AsyncHome,
-  AsyncMovies,
-  AsyncNoMatch
-} from "./asyncRoutes";
+import { AsyncHome, AsyncMovies, AsyncNoMatch } from "./asyncRoutes";
 
 const routes = [
   {
@@ -12,7 +8,7 @@ const routes = [
   },
   {
     path: "/movies",
-    component: AsyncMovies,
+    component: AsyncMovies
   },
   {
     path: "",
