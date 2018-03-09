@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Movie Item MovieItem ui renders correctly 1`] = `
+exports[`MovieItem MovieItem ui renders correctly 1`] = `
 .c0 {
   overflow-y: auto;
   height: 100px;

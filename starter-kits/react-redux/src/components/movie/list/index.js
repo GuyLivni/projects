@@ -2,7 +2,7 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import type { Movies } from "Movie-types";
-import MovieItem from "./item/";
+import MovieItem from "./item";
 
 type Props = {
   movies: Movies

@@ -11,14 +11,9 @@ const AsyncMovies = Loadable({
   loading: LoadingBar
 });
 
-const AsyncMoviesDashboard = Loadable({
-  loader: () => import("../components/movie/dashboard"),
-  loading: LoadingBar
-});
-
 const AsyncNoMatch = Loadable({
   loader: () => import("../screens/noMatch"),
   loading: LoadingBar
 });
 
-export { AsyncHome, AsyncMovies, AsyncMoviesDashboard, AsyncNoMatch };
+export { AsyncHome, AsyncMovies, AsyncNoMatch };
