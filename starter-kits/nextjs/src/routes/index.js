@@ -8,11 +8,15 @@ const APP_ROUTES = [
     pattern: '/',
   },
   {
-    page: 'about',
+    page: 'About',
     pattern: '/about',
   },
   {
-    page: 'movie',
+    page: 'movie/List',
+    pattern: '/movie/list',
+  },
+  {
+    page: 'movie/Description',
     pattern: '/movie/:id',
   },
 ];

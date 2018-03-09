@@ -35,7 +35,7 @@ const ErrorMessage = styled.h2`
     `};
 `;
 
-const NoMatch = () => {
+const ScreensNoMatch = () => {
   return (
     <NoMatchContainer>
       <ErrorCode>404 </ErrorCode>
@@ -44,4 +44,4 @@ const NoMatch = () => {
   );
 };
 
-export default NoMatch;
+export default ScreensNoMatch;

@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch } from "react-router-dom";
 import styled from "styled-components";
-import LoadingBar from "../common/loadingBar";
-import Header from "../../components/common/header";
+import LoadingBar from "../common/LoadingBar";
+import Header from "../common/header";
 import RouteWithSubRoutes from "../../utils/routeWithSubRoutes";
-import routes from "../../routes/index";
+import routes from "../../routes";
 
 const AppContainer = styled.div`
   height: 100%;

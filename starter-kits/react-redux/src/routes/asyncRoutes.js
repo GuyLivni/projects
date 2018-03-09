@@ -1,23 +1,23 @@
 import Loadable from "react-loadable";
-import LoadingBar from "../components/common/loadingBar";
+import LoadingBar from "../components/common/LoadingBar";
 
 const AsyncHome = Loadable({
-  loader: () => import("../views/home"),
+  loader: () => import("../screens/home"),
   loading: LoadingBar
 });
 
 const AsyncMovies = Loadable({
-  loader: () => import("../views/movies"),
+  loader: () => import("../screens/movie"),
   loading: LoadingBar
 });
 
 const AsyncMoviesDashboard = Loadable({
-  loader: () => import("../components/movie/moviesDashboard"),
+  loader: () => import("../components/movie/dashboard"),
   loading: LoadingBar
 });
 
 const AsyncNoMatch = Loadable({
-  loader: () => import("../views/noMatch"),
+  loader: () => import("../screens/noMatch"),
   loading: LoadingBar
 });
 

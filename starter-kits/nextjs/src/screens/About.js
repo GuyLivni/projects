@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import Layout from '../components/common/layout';
+import Layout from '../components/common/Layout';
 import Header from '../components/common/header';
 
-const About = () => (
+const ScreensAbout = () => (
   <Fragment>
     <Header />
     <Layout>
@@ -12,4 +12,4 @@ const About = () => (
   </Fragment>
 );
 
-export default About;
+export default ScreensAbout;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderLogo from './headerLogo';
-import HeaderBrand from './headerBrand';
+import HeaderLogo from './HeaderLogo';
+import HeaderBrand from './HeaderBrand';
 
 const HeaderContainer = styled.nav`
   position: fixed;

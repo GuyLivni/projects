@@ -35,6 +35,7 @@ const MenuItem = styled.a`
 
 const MenuItems = [
   { route: '/', name: 'Home', icon: 'home' },
+  { route: '/movie/list', name: 'Movies', icon: 'tv' },
   { route: '/about', name: 'About', icon: 'info' },
 ];
 

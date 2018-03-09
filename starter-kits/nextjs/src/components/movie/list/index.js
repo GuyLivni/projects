@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import MovieItem from './movieItem/';
+import MovieItem from './item/';
 
-const MovieListContainer = styled.ul`
+const Container = styled.ul`
   padding: 0;
   list-style: none;
 `;
@@ -24,7 +24,7 @@ const renderMovieList = shows =>
   });
 
 const MovieList = ({ shows }) => (
-  <MovieListContainer>{renderMovieList(shows)}</MovieListContainer>
+  <Container>{renderMovieList(shows)}</Container>
 );
 
 MovieList.propTypes = {

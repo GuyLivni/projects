@@ -2,10 +2,10 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Layout from '../components/common/layout';
-import { movieActions, movieSelectors } from '../redux/state/movie/';
+import Layout from '../../components/common/Layout';
+import { movieActions, movieSelectors } from '../../redux/state/movie';
 
-class Movie extends React.Component {
+class ScreensMovieDescription extends React.Component {
   static async getInitialProps({ store, isServer, query }) {
     const { id } = query;
     await store.dispatch(movieActions.getMovie(id));
@@ -39,10 +39,12 @@ const mapDispatchToProps = dispatch => ({
   ),
 });
 
-Movie.propTypes = {
+ScreensMovieDescription.propTypes = {
   show: PropTypes.object.isRequired,
   url: PropTypes.object.isRequired,
   actions: PropTypes.object.isRequired,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Movie);
+export default connect(mapStateToProps, mapDispatchToProps)(
+  ScreensMovieDescription,
+);

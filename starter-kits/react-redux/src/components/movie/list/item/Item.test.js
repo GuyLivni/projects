@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import React from "react";
 import MovieItem from "./";
 
-describe("Movie Item", () => {
+describe("MovieItem", () => {
   it("MovieItem ui renders correctly", () => {
     const tree = renderer
       .create(

@@ -1,10 +1,10 @@
 import React from "react";
 import RouteWithSubRoutes from "../../utils/routeWithSubRoutes";
 
-const Movies = ({ routes }) => {
+const ScreensMovie = ({ routes }) => {
   return routes.map(route => (
     <RouteWithSubRoutes key={route.path} {...route} />
   ));
 };
 
-export default Movies;
+export default ScreensMovie;

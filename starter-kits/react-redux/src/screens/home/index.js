@@ -7,7 +7,7 @@ const HomeContainer = styled(Container)`
   text-align: center;
 `;
 
-const Home = () => {
+const ScreensHome = () => {
   return (
     <HomeContainer>
       <h1>React starter boilerplate</h1>
@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ScreensHome;

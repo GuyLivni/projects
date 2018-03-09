@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import SideMenu from '../sideMenu';
-import Header from '../common/header';
-import LoadingBar from '../common/loadingBar';
+import Header from './header';
+import LoadingBar from '../common/LoadingBar';
 
 const LayoutContainer = styled.div`
   padding-left: 210px;

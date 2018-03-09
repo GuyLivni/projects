@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import HeaderMenu from "./headerMenu";
-import HeaderLogo from "./headerLogo";
-import HeaderBrand from "./headerBrand";
+import HeaderMenu from "./HeaderMenu";
+import HeaderLogo from "./HeaderLogo";
+import HeaderBrand from "./HeaderBrand";
 
 const HeaderContainer = styled.nav`
   display: flex;

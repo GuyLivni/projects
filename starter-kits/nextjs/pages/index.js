@@ -1,4 +1,4 @@
 import withReduxStore from '../src/redux/store';
-import Home from '../src/views/home';
+import ScreensIndex from '../src/screens/';
 
-export default withReduxStore(Home);
+export default withReduxStore(ScreensIndex);
