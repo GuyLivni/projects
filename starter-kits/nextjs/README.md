@@ -8,7 +8,6 @@ The App structure is following feature first modular approach.
 It is an extension of the ducks approach, called [re-ducks](https://github.com/alexnm/re-ducks) with minor changes.
 
 ```
-react-redux-starter
 .
 ├── .next                  # next build
 ├── .storybook             # storybook config
