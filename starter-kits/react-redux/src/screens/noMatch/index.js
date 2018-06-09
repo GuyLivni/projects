@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "semantic-ui-react";
 import { media } from "../../utils/styleUtils";
 
-const NoMatchContainer = styled(Container)`
-  margin-top: 150px;
-  display: flex !important;
+const Container = styled("div")`
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
 `;
 
-const ErrorCode = styled.h1`
-  margin: 0;
+const ErrorCode = styled("h1")`
   font-size: 17em;
   flex: 1;
+  text-align: center;
   background: -webkit-linear-gradient(to right, #9e7cc1, #8ecdea);
   background: linear-gradient(to right, #9e7cc1, #8ecdea);
   -webkit-background-clip: text;
@@ -23,7 +22,7 @@ const ErrorCode = styled.h1`
     `};
 `;
 
-const ErrorMessage = styled.h2`
+const ErrorMessage = styled("h2")`
   color: #b2b2b2;
   font-size: 5em;
   margin: 0;
@@ -31,16 +30,17 @@ const ErrorMessage = styled.h2`
   text-align: left;
   margin-left: 80px;
   ${media.handheld`
+       margin-left: 20px;
        font-size: 2em;
     `};
 `;
 
 const ScreensNoMatch = () => {
   return (
-    <NoMatchContainer>
+    <Container>
       <ErrorCode>404 </ErrorCode>
       <ErrorMessage>We couldn’t find this page. </ErrorMessage>
-    </NoMatchContainer>
+    </Container>
   );
 };
 

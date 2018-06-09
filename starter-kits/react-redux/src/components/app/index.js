@@ -1,23 +1,34 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Switch } from "react-router-dom";
 import styled from "styled-components";
-import LoadingBar from "../common/LoadingBar";
+import LoadingBar from "../common/loadingBar";
 import Header from "../common/header";
+import Footer from "../common/footer";
 import RouteWithSubRoutes from "../../utils/routeWithSubRoutes";
 import routes from "../../routes";
 
-const AppContainer = styled.div`
+const Content = styled.div`
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  margin: 100px 20px;
 `;
 
 const App = () => (
-  <AppContainer>
+  <Fragment>
     <LoadingBar />
     <Header />
-    <Switch>
-      {routes.map(route => <RouteWithSubRoutes key={route.path} {...route} />)}
-    </Switch>
-  </AppContainer>
+    <Content>
+      <Switch>
+        {routes.map(route => (
+          <RouteWithSubRoutes key={route.path} {...route} />
+        ))}
+      </Switch>
+    </Content>
+    <Footer />
+  </Fragment>
 );
 
 export default App;

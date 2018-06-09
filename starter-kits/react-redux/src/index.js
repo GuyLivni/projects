@@ -4,17 +4,22 @@ import { injectGlobal } from "styled-components";
 import styledNormalize from "styled-normalize";
 import Root from "./components/Root";
 import configureStore from "./redux/store";
-import "semantic-ui-css/semantic.min.css";
+import registerServiceWorker from "./registerServiceWorker";
 
 injectGlobal`
   ${styledNormalize}
+  
   body, html {
     font-family: benton-sans, 'Helvetica Neue', sans-serif;
-    background: #f9fafb;
+    background: #00000f;
+    height: 100%;
+    box-sizing: border-box;
   }
   
-  #root {
-    height: 100%;
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
 `;
 
@@ -28,3 +33,4 @@ if (module.hot) {
     render(<Root store={store} />, rootEl);
   });
 }
+registerServiceWorker();

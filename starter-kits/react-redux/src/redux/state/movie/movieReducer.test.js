@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { createApiAction } from "../../../utils/testUtils";
 import { LIFECYCLE } from "../../../redux/middlewares/api";
 import reducer from "./movieReducer";
@@ -6,7 +5,10 @@ import { movieTypes } from "./";
 import { movies } from "./movieMockData";
 
 describe("movie reducer", () => {
-  const initState = [];
+  const initState = {
+    movies: [],
+    movieDetails: {}
+  };
 
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual(initState);
@@ -18,6 +20,9 @@ describe("movie reducer", () => {
       payload: movies
     });
 
-    expect(reducer(initState, action)).toEqual(movies);
+    expect(reducer(initState, action)).toEqual({
+      movieDetails: {},
+      movies: movies.Search
+    });
   });
 });

@@ -1,9 +1,12 @@
 [ignore]
+.*/node_modules/styled-components/.*
 
 [include]
 
 [libs]
 ./flow-typed/types
+./flow-typed/npm
+
 [lints]
 
 [options]

@@ -1,18 +1,35 @@
-import React from "react";
-import styled from "styled-components";
-import { Container } from "semantic-ui-react";
+import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import MovieList from "../../components/movie/list";
+import { movieActions } from "../../redux/state/movie";
+import type { Movies } from "Movie-types";
 
-const HomeContainer = styled(Container)`
-  margin-top: 150px;
-  text-align: center;
-`;
-
-const ScreensHome = () => {
-  return (
-    <HomeContainer>
-      <h1>React starter boilerplate</h1>
-    </HomeContainer>
-  );
+type Props = {
+  actions: Object,
+  movies: Movies
 };
+class ScreensHome extends Component<Props> {
+  componentDidMount() {
+    this.props.actions.getMovies("Batman");
+  }
 
-export default ScreensHome;
+  render() {
+    return <MovieList movies={this.props.movies} />;
+  }
+}
+
+const mapStateToProps = ({ movie }) => ({
+  movies: movie.movies
+});
+
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(
+    {
+      ...movieActions
+    },
+    dispatch
+  )
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ScreensHome);

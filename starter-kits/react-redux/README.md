@@ -39,7 +39,6 @@ react-redux-starter
 + [axios](https://github.com/mzabriskie/axios) for universal data fetching/rehydration on the client.
 + An api middleware based on [redux-pack](https://github.com/lelandrichardson/redux-pack) with some changes to deal with asynchronous actions.
 + [redux-logger](https://github.com/evgenyrodionov/redux-logger) as logging middleware for redux actions.
-+ [Semantic-ui](https://semantic-ui.com/) as css styling framework, including [semantic-ui-react](https://react.semantic-ui.com/introduction)
 + [styled-components](https://github.com/styled-components/styled-components) as css in js styling solution for components based app.
 + [styled-normalize](https://github.com/sergeysova/styled-normalize) to normalize global browser css.
 + [Redux Devtools Extension](https://github.com/zalmoxisus/redux-devtools-extension) for next generation developer experience.

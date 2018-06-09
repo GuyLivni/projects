@@ -1,38 +1,46 @@
 /* @flow */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import styled from "styled-components";
-import { Container } from "semantic-ui-react";
-import type { Movies } from "Movie-types";
+import type { Movie } from "Movie-types";
+import Details from "../../components/movie/details";
+import Loader from "../../components/common/loader";
 import { movieActions } from "../../redux/state/movie";
-import MovieList from "../../components/movie/list";
-
-const ScreensMovieContainer = styled(Container)`
-  padding-top: 20px;
-`;
 
 type Props = {
   actions: Object,
-  movie: Movies
+  match: Object,
+  movieDetails: Movie,
+  loading: boolean
 };
 
 class ScreensMovieList extends Component<Props> {
+  static defaultProps = {
+    movieDetails: {}
+  };
+
   componentDidMount() {
-    this.props.actions.getMovies();
+    const { actions, match } = this.props;
+    actions.getMovie(match.params.id);
   }
 
   render() {
+    //TODO: fix this shit
     return (
-      <ScreensMovieContainer>
-        <MovieList movies={this.props.movie} />
-      </ScreensMovieContainer>
+      <Fragment>
+        {this.props.loading ? (
+          <Loader />
+        ) : (
+          <Details {...this.props.movieDetails} />
+        )}
+      </Fragment>
     );
   }
 }
 
 const mapStateToProps = ({ movie }) => ({
-  movie
+  movieDetails: movie.movieDetails,
+  loading: movie.loading
 });
 
 const mapDispatchToProps = dispatch => ({

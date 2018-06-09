@@ -1,6 +1,5 @@
 import React                  from 'react';
 import styled, {injectGlobal} from 'styled-components';
-import 'semantic-ui-css/semantic.min.css';
 
 injectGlobal`
   body, html {

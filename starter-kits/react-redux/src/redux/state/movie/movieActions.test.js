@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import configureMockStore from "redux-mock-store";
 import moxios from "moxios";
 import { hideLoading, showLoading } from "react-redux-loading-bar";
@@ -41,7 +40,7 @@ describe("getUsers actions", () => {
       hideLoading()
     ];
 
-    const store = mockStore([]);
+    const store = mockStore({ movies: [], movieDetails: {} });
 
     return store.dispatch(movieActions.getMovies()).then(() => {
       expect(store.getActions()).toEqual(expectedActions);

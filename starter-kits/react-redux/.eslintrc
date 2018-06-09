@@ -1,7 +1,15 @@
 {
   "extends": "react-app",
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "prettier/prettier": "error"
+  },
+  "globals": {
+    "create": true,
+    "shallow": true,
+    "render": true,
+    "mount": true
   }
 }

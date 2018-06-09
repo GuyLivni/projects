@@ -1,5 +1,5 @@
-// flow-typed signature: 9fd7b9287df55ee8cfa980889d107499
-// flow-typed version: a8b5058d19/axios_v0.17.x/flow_>=v0.25.x
+// flow-typed signature: 4552413ec2a67e1215d1e7d98fb37fc7
+// flow-typed version: 8b766558cb/axios_v0.17.x/flow_>=v0.25.x
 
 declare module "axios" {
   declare interface ProxyConfig {
@@ -36,7 +36,7 @@ declare module "axios" {
     httpAgent?: mixed; // Missing the type in the core flow node libdef
     httpsAgent?: mixed; // Missing the type in the core flow node libdef
     maxContentLength?: number;
-    maxRedirects?: 5;
+    maxRedirects?: number;
     params?: Object;
     paramsSerializer?: (params: Object) => string;
     progress?: (progressEvent: Event) => void | mixed;
@@ -72,7 +72,7 @@ declare module "axios" {
     request: http$ClientRequest | XMLHttpRequest;
   }
   declare type $AxiosXHR<T> = AxiosXHR<T>;
-  declare class AxiosInterceptorIdent extends String {}
+  declare type AxiosInterceptorIdent = number;
   declare class AxiosRequestInterceptor<T> {
     use(
       successHandler: ?(
@@ -124,7 +124,8 @@ declare module "axios" {
 
   declare class AxiosError<T> extends Error {
     config: AxiosXHRConfig<T>;
-    response: AxiosXHR<T>;
+    request?: http$ClientRequest | XMLHttpRequest;
+    response?: AxiosXHR<T>;
     code?: string;
   }
 
