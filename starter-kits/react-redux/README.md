@@ -39,7 +39,7 @@ react-redux-starter
 + [axios](https://github.com/mzabriskie/axios) for universal data fetching/rehydration on the client.
 + An api middleware based on [redux-pack](https://github.com/lelandrichardson/redux-pack) with some changes to deal with asynchronous actions.
 + [redux-logger](https://github.com/evgenyrodionov/redux-logger) as logging middleware for redux actions.
-+ [styled-components](https://github.com/styled-components/styled-components) as css in js styling solution for components based app.
++ [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components) as css in js styling solution for components based app.
 + [styled-normalize](https://github.com/sergeysova/styled-normalize) to normalize global browser css.
 + [Redux Devtools Extension](https://github.com/zalmoxisus/redux-devtools-extension) for next generation developer experience.
 + [flow](https://github.com/facebook/flow) as the static type checker.
